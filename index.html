@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesCre.css">
+    
+    <title>Principal</title>
+</head>
+<body>
+    <header>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="create.html">Create</a></li>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="#">Update</a></li>  
+                <li><a href="#">Delete</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contenedor">
+            <div class="formulario-contenedor">
+                <h3 class="formulario-titulo">INGRESO DE EVENTO</h3>
+                <form id="miFormulario">
+                    <label for="etiqueta">Etiqueta: </label>
+                    <input type="text" id="etiqueta" name="etiqueta" required placeholder="Ej: Reunión, JEFAZO"><br><br>
+        
+                    <label for="fecha">Fecha: </label>
+                    <input type="date" id="fecha" name="dia" required><br><br>
+        
+                    <label for="hora">Horario: </label>
+                    <input type="time" id="hora" name="horario" required><br><br>
+        
+                    <!-- Cambié onclick="enviarDatos()" por el manejo directo del evento en JavaScript -->
+                    <button type="submit">Agendar</button>
+                </form>
+            </div>
+        </section>        
+        <article class="articulo">
+            <h2 class="articulo_titulo">Beneficios de un organizador de tareas</h2>
+            <p class="articulo_contenido">
+                <p><strong>Mayor productividad:</strong> Un organizador de tareas te ayuda a mantenerte enfocado en lo importante y a evitar distracciones. Al tener una lista clara de tus tareas, puedes priorizarlas y asegurarte de que estás trabajando en las actividades más importantes. </p><br>
+                <p><strong>Mejora de la gestión del tiempo:</strong> Un organizador de tareas te ayuda a aprovechar al máximo tu tiempo. Al planificar tus tareas y establecer plazos, puedes asegurarte de que estás dedicando tiempo suficiente a cada actividad. </p><br>
+                <p><strong>Mayor claridad y enfoque:</strong> Un organizador de tareas te ayuda a tener una visión clara de tus objetivos y de los pasos que necesitas dar para alcanzarlos. Esto te permite mantenerte enfocado y motivado. </p><br>
+                <p><strong>Aumento de la eficiencia:</strong> Al tener todas tus tareas en un solo lugar, puedes evitar perder tiempo buscando información o recordando qué tienes que hacer. Esto te permite ser más eficiente y productivo.</p>
+            </p>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Todos los derechos reservados.</p>
+            <p>Contacto: No tengo ninguno</p>
+        </div>
+    </footer>
+    <script defer src="../app.js"></script>
+</body>
+</html>
